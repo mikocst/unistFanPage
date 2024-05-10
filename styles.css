@@ -63,7 +63,7 @@ section {
 .hero {
     width: 100dvw;
     height: 100dvh;
-    background-image: url("/unist-fan-page/static/hero-bg.png");
+    background-image: url("static/hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -210,7 +210,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("/unist-fan-page/static/cs-bg.png");
+    background-image: url("static/cs-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     height:auto;
