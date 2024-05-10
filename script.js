@@ -20,7 +20,7 @@ let changeCharacter = (character) => {
         switch(character) 
         {
             case "tsurugi":
-                document.getElementById("full").src = "../static/characters/tsurugi-full.svg";
+                document.getElementById("full").src = "static/characters/tsurugi-full.svg";
                 document.getElementById("details").style.backgroundColor = "#6D3018"
                 document.getElementById("name").innerHTML = "Tsurugi";
                 document.getElementById("status").innerHTML = "Available"
@@ -29,7 +29,7 @@ let changeCharacter = (character) => {
                 break;  
 
             case "kaguya":
-                document.getElementById("full").src = "../static/characters/kaguya-full.svg";
+                document.getElementById("full").src = "static/characters/kaguya-full.svg";
                 document.getElementById("details").style.backgroundColor = "#3E4266"
                 document.getElementById("name").innerHTML = "Kaguya";
                 document.getElementById("status").innerHTML = "Available"
@@ -38,7 +38,7 @@ let changeCharacter = (character) => {
                 break;
 
             case "kuon":
-                    document.getElementById("full").src = "../static/characters/kuon-full.svg";
+                    document.getElementById("full").src = "static/characters/kuon-full.svg";
                     document.getElementById("details").style.backgroundColor = "#750115"
                     document.getElementById("name").innerHTML = "Kuon";
                     document.getElementById("status").innerHTML = "Available"
@@ -47,7 +47,7 @@ let changeCharacter = (character) => {
                     break;    
 
             case "uzuki":
-                    document.getElementById("full").src = "../static/characters/uzuki-full.svg";
+                    document.getElementById("full").src = "static/characters/uzuki-full.svg";
                     document.getElementById("details").style.backgroundColor = "#A05360"
                     document.getElementById("name").innerHTML = "Uzuki";
                     document.getElementById("status").innerHTML = "August 2024"
@@ -56,7 +56,7 @@ let changeCharacter = (character) => {
                     break; 
             
             case "ogre":
-                    document.getElementById("full").src = "../static/characters/ogre-full.svg";
+                    document.getElementById("full").src = "static/characters/ogre-full.svg";
                     document.getElementById("details").style.backgroundColor = "#32182A"
                     document.getElementById("name").innerHTML = "Ogre";
                     document.getElementById("status").innerHTML = "February 2025"
@@ -65,7 +65,7 @@ let changeCharacter = (character) => {
                         break; 
             
             case "izumi":
-                    document.getElementById("full").src = "../static/characters/izumi-full.svg";
+                    document.getElementById("full").src = "static/characters/izumi-full.svg";
                     document.getElementById("details").style.backgroundColor = "#898DC1"
                     document.getElementById("name").innerHTML = "Izumi";
                     document.getElementById("status").innerHTML = "August 2025"
