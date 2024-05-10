@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #030517;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: white;
+}
+
+h1 {
+    font-family: 'Teko', sans-serif;
+}
+
+h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 48px;
+}
+
+h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+p {
+    color: white;
+    font-size: 20px; 
+}
+
+section {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+
+.menu-button {
+    display: none;
+}
+
+.container {
+    height: auto;
+    width: 90%;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    width: 100dvw;
+    height: 100dvh;
+    background-image: url("/unist-fan-page/static/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content > * {
+    margin: 0 0 16px;
+}
+
+.button-wrapper > * {
+    margin: 8px;
+}
+
+button {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    background-color: #DE2854;
+    color: #FFFFFF;
+    border-radius: 12px;
+    border: none;
+}
+
+.primary {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.secondary {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .2)
+}
+
+
+nav {
+    position:fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+.nav-container > ul:not(.sidebar) {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none; /* Remove bullet points */
+    padding-right: 1rem;
+  }
+
+.nav-container li{
+    padding: 10px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color:azure;
+    height: 100%;
+}
+
+.nav-container a:hover {
+    text-decoration: underline;
+    transform: scale(1.5)
+}
+
+
+.nav-container > ul:not(.sidebar) {
+    display: flex;
+}
+
+.nav-menu  li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .sidebar li {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .sidebar a {
+    width:100%;
+  }
+
+  .features {
+    height: auto;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    margin-top:24px;
+    margin-bottom: 124px;
+  }
+
+  .text-content {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .character-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/unist-fan-page/static/cs-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:auto;
+
+  }
+
+.character-previews {
+    margin-bottom: 1rem;
+}
+
+  .character-button-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+.character-button-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+  .char-btn {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+  }
+
+  .character-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:70%;
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+
+  .character-details {
+    width: 60ch;
+    font-size: 14px;
+    padding: 16px;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 12px;
+  }
+
+  .status {
+    padding: 8px;
+    font-size: 16px;
+    width: 90px;
+    text-align: center;
+    margin-bottom: 8px;
+    border-radius: 12px;
+  }
+
+
+
+  @media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        width: 100%;
+    }
+
+    .primary {
+        margin-bottom: 4px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .svg-container {
+        width: 100%;
+        resize: both;
+        overflow: auto;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+        max-width: 95%;
+        text-align: center;
+    }
+
+    #content2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .character-previews {
+        margin: 16px;
+    }
+
+    .character-button-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .char-btn img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .character-button-top {
+       flex-direction: column;
+    }
+
+    .character-button-bottom {
+        flex-direction: column;
+    }
+
+    .character-display {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .char-por-wrap img {
+        max-width: 100%;
+        height:auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .character-details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
